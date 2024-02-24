@@ -9,7 +9,7 @@ export default class ContactForm extends PureComponent {
 
   onInputChange = e => {
     const { name, value } = e.currentTarget;
-    this.setState(state => {
+    this.setState(() => {
       return { [name]: value };
     });
   };
